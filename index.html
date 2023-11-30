@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/42b14e7f04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- responsive header on mobile, hidden on larger screen -->
+            <div class="hidden-header">
+                <span><h2>Select a year to see <br> your listening</h2></span>
+                <div class="hidden-header-year">
+                    <span id="first-year"><p>'23</p></span>
+                    <span id="second-year"><p>'22</p></span>
+                </div>
+            </div>
+            <!-- responsive header on mobile, hidden on larger screen -->
+            <div class="ham-container">
+                <button id="hamburger">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- responsive header on mobile, hidden on larger screen -->
+            <div class="logo">
+                <h5>heisjohnson</h5>
+                <h2>replay'23</h2>
+            </div>
+            <div class="music">
+                <i class="fa-brands fa-apple"></i>
+                <p>music</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <span id="hero-head">
+                    <h2>Replay <br>
+                        your year in <br>music.
+                    </h2>
+                </span>
+                <span id="hero-button">
+                    <button>
+                        <i class="fa-solid fa-play"></i>
+                        <p>play your hightlight reel</p>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </main>
+    <!-- top artists -->
+    <section>
+        <div class="section-header">
+            <h2>More music that <br> defined your year</h2>
+        </div>
+        <div class="card artist">
+            <div class="card-content">
+                <span id="card-header">
+                    <h2>top artist</h2>
+                    <p>525 total artists</p>
+                </span>
+                <div class="card-info">
+                    <div class="card-number">
+                        <span>1</span>
+                        <div class="artist">
+                            <span id="artist-img">
+                                <img src="gallery/allyson.png" alt="sola allyson image">
+                            </span>
+                            <span id="artist-number">
+                                <h5>sola allyson</h5>
+                                <p>9,076 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>2</span>
+                        <div class="artist">
+                            <span id="artist-img">
+                                <img src="gallery/omahlay.png" alt="omah lay image">
+                            </span>
+                            <span id="artist-number">
+                                <h5>omah lay</h5>
+                                <p>8,024 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>3</span>
+                        <div class="artist">
+                            <span id="artist-img">
+                                <img src="gallery/seyi vibes.png" alt="seyi vibes image">
+                            </span>
+                            <span id="artist-number">
+                                <h5>seyi vibez</h5>
+                                <p>5,655 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>4</span>
+                        <div class="artist">
+                            <span id="artist-img">
+                                <img src="gallery/chike.png" alt="chike image">
+                            </span>
+                            <span id="artist-number">
+                                <h5>chike</h5>
+                                <p>3,070 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>5</span>
+                        <div class="artist">
+                            <span id="artist-img">
+                                <img src="gallery/asake.jpeg" alt="asake image">
+                            </span>
+                            <span id="artist-number">
+                                <h5>asake</h5>
+                                <p>3,022 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-pagination">
+                        <span id="dot" class="active"></span>
+                        <span id="dot"></span>
+                        <span id="dot"></span>
+                        <span class="material-symbols-outlined share">
+                            ios_share
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top songs -->
+    <section>
+        <div class="card song">
+            <div class="card-content">
+                <span id="card-header">
+                    <h2>top song</h2>
+                    <p>1,568 total songs</p>
+                </span>
+                <div class="card-info">
+                    <div class="card-number">
+                        <span>1</span>
+                        <div class="artist">
+                            <span id="song-img">
+                                <img src="gallery/sola album.png" alt="sola allyson image">
+                            </span>
+                            <span id="song-number">
+                                <h4>Ebe</h4>
+                                <p>Sola Allyson</p>
+                                <p>378 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>2</span>
+                        <div class="artist">
+                            <span id="song-img">
+                                <img src="gallery/omah album.jpeg" alt="omah lay image">
+                            </span>
+                            <span id="song-number">
+                                <h5>soso</h5>
+                                <p>Omah Lay</p>
+                                <p>223 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>3</span>
+                        <div class="artist">
+                            <span id="song-img">
+                                <img src="gallery/omah album.jpeg" alt="omah image">
+                            </span>
+                            <span id="song-number">
+                                <span id="artist-flex">
+                                    <h5>i'm a mess</h5>
+                                    <i class="fa-solid fa-e"></i>
+                                </span>
+                                <p>Omah Lay</p>
+                                <p>198 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>4</span>
+                        <div class="artist">
+                            <span id="song-img">
+                                <img src="gallery/omah album.jpeg" alt="omah image">
+                            </span>
+                            <span id="song-number">
+                                <span id="artist-flex">
+                                    <h5>bend you</h5>
+                                    <i class="fa-solid fa-e"></i>
+                                </span>
+                                <p>Omah Lay</p>
+                                <p>187 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>5</span>
+                        <div class="artist">
+                            <span id="song-img">
+                                <img src="gallery/omah album.jpeg" alt="omah image">
+                            </span>
+                            <span id="song-number">
+                                <h5>understand</h5>
+                                <p>Omah Lay</p>
+                                <p>155 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-pagination">
+                        <span id="dot" class="active"></span>
+                        <span id="dot"></span>
+                        <span id="dot"></span>
+                        <span class="material-symbols-outlined share">
+                            ios_share
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top albums -->
+    <section>
+        <div class="card album">
+            <div class="card-content">
+                <span id="card-header">
+                    <h2>top album</h2>
+                    <p>85 total albums</p>
+                </span>
+                <div class="card-info">
+                    <div class="card-number">
+                        <span>1</span>
+                        <div class="album">
+                            <span id="album-img">
+                                <img src="gallery/omah album.jpeg" alt="omah lay image">
+                            </span>
+                            <span id="album-number">
+                                <span id="album-flex">
+                                    <h5>BoyAlone(Deluxe)</h5>
+                                    <i class="fa-solid fa-e"></i>
+                                </span>
+                                <p>Omah Lay</p>
+                                <p>1,395 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>2</span>
+                        <div class="album">
+                            <span id="album-img">
+                                <img src="gallery/chike album.png" alt="chike image">
+                            </span>
+                            <span id="album-number">
+                                <h5>Boo of the Booless</h5>
+                                <p>Chike</p>
+                                <p>932 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>3</span>
+                        <div class="album">
+                            <span id="album-img">
+                                <img src="gallery/omah album.jpeg" alt="omahlay image">
+                            </span>
+                            <span id="album-number">
+                                <span id="album-flex">
+                                    <h5>Boy Alone</h5>
+                                    <i class="fa-solid fa-e"></i>
+                                </span>
+                                <p>Omah Lay</p>
+                                <p>637 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>4</span>
+                        <div class="album">
+                            <span id="album-img">
+                                <img src="gallery/seyi album.jpeg" alt="seyi image">
+                            </span>
+                            <span id="album-number">
+                                <h5>Vibe Till Thy Kingdo...</h5>
+                                <p>Seyi Vibez</p>
+                                <p>511 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>5</span>
+                        <div class="album">
+                            <span id="album-img">
+                                <img src="gallery/oxlade.jpeg" alt="oxlade image">
+                            </span>
+                            <span id="album-number">
+                                <h5>OXYGENE - EP</h5>
+                                <p>Oxlade</p>
+                                <p>441 plays</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-pagination">
+                        <span id="dot" class="active"></span>
+                        <span id="dot"></span>
+                        <span id="dot"></span>
+                        <span class="material-symbols-outlined share">
+                            ios_share
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top genre -->
+    <article>
+        <div class="genre-body">
+            <div class="genre-content">
+                <h2>top genres</h2><br>
+                <div class="genre-info">
+                    <h3>afrobeats</h3>
+                    <h3>afro-pop</h3>
+                    <h3>worldwide</h3>
+                    <h3>Afro-beat</h3>
+                    <h3>christian</h3>
+                </div>
+                <div class="genre-pagination">
+                    <span class="material-symbols-outlined share">
+                        ios_share
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- top playlists -->
+    <section>
+        <div class="section-header">
+            <h2>These playlists set the <br> mood</h2>
+        </div>
+        <div class="card playlist">
+            <div class="card-content">
+                <span id="card-header">
+                    <h2>top playlists</h2>
+                    <p>9 total playlists</p>
+                </span>
+                <div class="card-info">
+                    <div class="card-number">
+                        <span>1</span>
+                        <div class="playlist">
+                            <span id="playlist-img">
+                                <img src="gallery/top 100.jpeg" alt="top 100 image">
+                            </span>
+                            <span id="playlist-number">
+                                <h5>top 100: nigeria</h5>
+                                <p>30,203 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>2</span>
+                        <div class="playlist">
+                            <span id="playlist-img">
+                                <img src="gallery/lullaby.jpg" alt="lullaby image">
+                            </span>
+                            <span id="playlist-number">
+                                <h5>lullaby essentials</h5>
+                                <p>205 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>3</span>
+                        <div class="playlist">
+                            <span id="playlist-img">
+                                <img src="gallery/joeboy essentials.jpeg" alt="joeboy image">
+                            </span>
+                            <span id="playlist-number">
+                                <h5>joeboy essentials</h5>
+                                <p>159 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>4</span>
+                        <div class="playlist">
+                            <span id="playlist-img">
+                                <img src="gallery/Amapiano-Lifestyle.webp" alt="amapiano image">
+                            </span>
+                            <span id="playlist-number">
+                                <h5>amapiano lifestyle</h5>
+                                <p>122 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-number">
+                        <span>5</span>
+                        <div class="playlist">
+                            <span id="playlist-img">
+                                <img src="gallery/omah lay essentials.jpg" alt="omahlay image">
+                            </span>
+                            <span id="playlist-number">
+                                <h5>Omah Lay Essentials</h5>
+                                <p>122 minutes</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-pagination">
+                    <span class="material-symbols-outlined share">
+                        ios_share
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- milestones -->
+    <section>
+        <div class="section-header">
+            <h2>These milestones <br> closed out the year</h2>
+        </div>
+        <div class="milestone">
+            <div class="milestone-card">
+                <div class="milestone-content">
+                    <div class="milestone-header">
+                        <h2>milestone</h2>
+                        <p>minutes listened</p>
+                    </div>
+                    <div class="milestone-minutes">
+                        <h2>50,000</h2>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="milestone-image-container">
+                        <div class="milestone-img">
+                            <img src="gallery/omahlay.png" alt="omah lay album image">
+                        </div>
+                        <div class="milestone-img milestone-radius">
+                            <img src="gallery/allyson.png" alt="sola allyson image">
+                        </div>
+                        <div class="milestone-img">
+                            <img src="gallery/sola album.png" alt="sola allyson album image">
+                        </div>
+                    </div>
+                    <div class="milestone-footer">
+                        <span>
+                            <h5>Reached <br> 19 July</h5>
+                        </span>
+                        <span class="material-symbols-outlined share">
+                            ios_share
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="milestone-card">
+                <div class="milestone-content">
+                    <div class="milestone-header">
+                        <h2>milestone</h2>
+                        <p>artists played</p>
+                    </div>
+                    <div class="milestone-minutes">
+                        <h2>500</h2>
+                        <p>Artists</p>
+                    </div>
+                    <div class="milestone-image-container">
+                        <div class="milestone-img">
+                            <img src="gallery/allyson.png" alt="sola allyson image">
+                        </div>
+                        <div class="milestone-img milestone-radius">
+                            <img src="gallery/omahlay.png" alt="omah lay image">
+                        </div>
+                        <div class="milestone-img">
+                            <img src="gallery/seyi vibes.png" alt="seyi vibez image">
+                        </div>
+                    </div>
+                    <div class="milestone-footer">
+                        <span>
+                            <h5>Reached <br> 18 October</h5>
+                        </span>
+                        <span class="material-symbols-outlined share">
+                            ios_share
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="milestone-card">
+                <div class="milestone-content">
+                    <div class="milestone-header">
+                        <h2>milestone</h2>
+                        <p>songs played</p>
+                    </div>
+                    <div class="milestone-minutes">
+                        <h2>1,000</h2>
+                        <p>Songs</p>
+                    </div>
+                    <div class="milestone-image-container">
+                        <div class="milestone-img">
+                            <img src="gallery/sola album.png" alt=" sola llyson album image">
+                        </div>
+                        <div class="milestone-img milestone-radius">
+                            <img src="gallery/omah album.jpeg" alt="omahlay image">
+                        </div>
+                        <div class="milestone-img">
+                            <img src="gallery/omah album.jpeg" alt="omahlay image">
+                        </div>
+                    </div>
+                    <div class="milestone-footer">
+                        <span>
+                            <h5>Reached <br> 28 June</h5>
+                        </span>
+                        <span class="material-symbols-outlined share">
+                            ios_share
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" milestone-pagination">
+            <span id="dot" class="active"></span>
+            <span id="dot"></span>
+            <span id="dot"></span>
+        </div>
+    </section>
+    <section>
+        <div class="section-header">
+            <h2>Replay the soundtrack<br> of your year</h2>
+        </div>
+        <div class="replay">
+            <div class="replay-content">
+                <div class="replay-card">
+                    <div class="replay-music">
+                        <i class="fa-brands fa-apple"></i>
+                        <p>music</p>
+                    </div>
+                    <div class="replay-number">
+                        <h2>Replay</h2>
+                        <h1>'23</h1>
+                    </div>
+                </div>
+                <div class="replay-button">
+                    <button>
+                        <p>Open in Apple Music</p>
+                        <span class="material-symbols-outlined arrow">
+                            north_east
+                        </span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <summary>
+        <div class="summary-info">
+            <span><p>Learn how Apple Music replay works</p></span>
+            <span class="material-symbols-outlined arrow">
+                north_east
+            </span>
+        </div>
+    </summary>
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <span>
+                <p>united kingdom</p>
+            </span><br>
+            <span>
+                <p>Copyright <span>&copy;</span> 2023 Apple Inc. All rights reserved.</p>
+            </span><br>
+            <div class="footer-info">
+                <span><p>internet service terms</p></span>
+                <span><p>apple music & privacy</p></span>
+                <span><p>cookie warning</p></span>
+                <span><p>support</p></span>
+                <span id="feedback"><p>feedback</p></span>
+                <span><p>sign out</p></span>
+            </div>
+            <div class="name-tag">
+                <a href="">Developed by johnsonDev.</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
