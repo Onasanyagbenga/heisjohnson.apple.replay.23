@@ -1109,7 +1109,7 @@ section{
         font-size: 9rem;
         font-weight: 600;
     }
-    #second-year p:hover,#second-year p:active,#second-year p:focus{
+    #second-year:hover p,#second-year:active p,#second-year:focus p{
         color:#5360ea;
     }
     .hidden-header #first-year p{
@@ -1118,7 +1118,7 @@ section{
         font-weight: 500;
         transition: color 800ms;
     }
-    .hidden-header #first-year p:hover,.hidden-header #first-year p:active,.hidden-header #first-year p:focus{
+    .hidden-header #first-year:hover p,.hidden-header #first-year:active p,.hidden-header #first-year:focus p{
         color: #00bfff;
     }
     
