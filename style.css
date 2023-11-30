@@ -738,6 +738,7 @@ footer{
 }
 .name-tag i{
     font-size: 1.5rem;
+    color: white;
 }
 .name-tag a{
     color: white;
@@ -1050,7 +1051,7 @@ section{
 
 /* footer */
 .footer-content{
-    padding: 1rem;
+    padding: 2.2rem 1rem;
 }
 .footer-content span > p{
     font-size: 0.5rem;
@@ -1107,6 +1108,18 @@ section{
     .hidden-header #first-year p{
         font-size: 9rem;
         font-weight: 600;
+    }
+    #second-year p:hover,#second-year p:active,#second-year p:focus{
+        color:#5360ea;
+    }
+    .hidden-header #first-year p{
+        color: var(--primary-color);
+        font-size: 10rem;
+        font-weight: 500;
+        transition: color 800ms;
+    }
+    .hidden-header #first-year p:hover,.hidden-header #first-year p:active,.hidden-header #first-year p:focus{
+        color: #00bfff;
     }
     
     /* responsive header */
@@ -1385,7 +1398,7 @@ section{
 
 /* footer */
 .footer-content{
-    padding: 1rem;
+    padding:2.3rem 1rem;
 }
 .footer-content span > p{
     font-size: 0.65rem;
