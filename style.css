@@ -1754,7 +1754,7 @@ section{
     right: 5px;
 }
 .playlist-pagination .share{
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0.4rem;
 }
 #song-number #artist-flex,#album-flex{
@@ -2563,13 +2563,13 @@ section{
     width: 10px;
 }
 .card-pagination .share{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.5rem;
     top: -20px;
     right: 5px;
 }
 .playlist-pagination .share{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.4rem;
 }
 #song-number #artist-flex,#album-flex{
@@ -2624,7 +2624,7 @@ section{
     font-weight: 600;
 }
 .genre-pagination .share{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.4rem;
 }
 
