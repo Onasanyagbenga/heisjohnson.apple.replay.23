@@ -9,7 +9,7 @@
     --secondary-color: black;
     --font-size: 1rem;
     background: rgb(81,103,231);
-background: radial-gradient(circle, rgba(81,103,231,1) 11%, rgba(57,195,197,1) 75%);
+    background: radial-gradient(circle, rgba(81,103,231,1) 11%, rgba(57,195,197,1) 75%);
 }
 
 /* header */
@@ -37,7 +37,7 @@ nav{
     width: 100%;
     /* right: 100%;
     top: 0px; */
-    /* z-index: 5; */
+    z-index: 5;
     /* border-top: 2px solid red; */
     position: fixed;
     bottom: 100%;
@@ -97,7 +97,7 @@ nav{
 .ham-container{
     padding: 0 1.5rem;
     display: block;
-    /* z-index: 6; */
+    z-index: 6;
     /* position: fixed; */
     /* border: 2px solid black; */
 }
@@ -266,7 +266,8 @@ section{
     width: 100%;
     border-radius: 25px;
     display: flex;
-    background: black;
+    background-color: #00000024;
+    /* border: 2px solid red; */
     padding: 2rem;
     align-items: center;
     justify-content: center;
@@ -307,7 +308,7 @@ section{
     justify-content: flex-start;
     align-items: center;
 }
-.card-number span{
+.card-number #one{
     font-size: 4rem;
     color: #d3d3d3;
     opacity: 0.8;
@@ -362,16 +363,16 @@ section{
 .card-pagination #dot{
     height: 15px;
     width: 15px;
-    /* background: transparent; */
-    background: white;
+    background: transparent;
+    background: rgba(255, 255, 255, 0.453);
     border-radius: 50%;
 }
-.card-pagination #dot .active{
+.card-pagination #dot.active{
     background-color: var(--primary-color);
 }
 .card-pagination .share{
     font-size: 1.8rem;
-    color: var(--secondary-color);
+    color: #000000b5;
     border-radius: 50%;
     position: absolute;
     padding: 0.6rem;
@@ -437,11 +438,11 @@ section{
 }
 .genre-content{
     width: 100%; 
-    /* backdrop-filter: blur(20px); */
     /* border: 2px solid red; */
     border-radius: 25px;
+    background-color: #00000024;
     padding: 2.5rem;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
 }
 .genre-content h2{
     text-transform: capitalize;
@@ -466,7 +467,7 @@ section{
 }
 .genre-pagination .share, .playlist-pagination .share{
     font-size: 1.8rem;
-    color: var(--secondary-color);
+    color: #000000b5;
     border-radius: 50%;
     padding: 0.6rem;
     background-color: var(--primary-color);
@@ -583,7 +584,7 @@ section{
 }
 .milestone-footer .share{
     font-size: 1.7rem;
-    color: var(--secondary-color);
+    color: #000000b5;
     border-radius: 50%;
     padding: 0.5rem;
     background-color: var(--primary-color);
@@ -681,21 +682,22 @@ section{
     justify-content: center;
     gap: 0.8rem;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .replay-button button:hover{
-    background: transparent;
-    border: 2px solid black;
+    background-color: var(--secondary-color);
 }
 .replay-button button:hover p,.replay-button button:hover .arrow{
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 .replay-button button .arrow{
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    /* color: var(--primary-color); */
 }
 .replay-button button p{
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+    color: var(--secondary-color);
     text-transform: capitalize;
     font-size: 1.3rem;
 }
@@ -753,15 +755,15 @@ footer{
 }
 .name-tag i{
     font-size: 1.5rem;
-    color: white;
+    color: var(--primary-color);
 }
 .name-tag a{
-    color: white;
+    color: var(--primary-color);
     font-size: 1.2rem;
     text-decoration: none;
 }
 .name-tag a:hover{
-    color: var(--secondary-color);
+    color: deepskyblue;
     transition: 0.5s;
 }
 
@@ -913,7 +915,7 @@ section{
 .card-number{
     gap: 0.65rem;
 }
-.card-number span{
+.card-number #one{
     font-size: 1.1rem;
 }
 .artist,.album,.playlist,.song{
@@ -931,7 +933,8 @@ section{
     font-weight: 500;
 }
 #artist-number p{
-    color: #d3d3d389;
+    color: #d3d3d3;
+    opacity: 0.8;
     font-size: 0.6rem;
 }
 .card-pagination{
@@ -1107,8 +1110,9 @@ section{
     .hidden-header{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
+        overflow: hidden;
         /* right: 100%;
         top: 0px; */
         /* z-index: 5; */
@@ -1174,7 +1178,7 @@ section{
     .logo{
         width: 100%;
         /* border: 2px solid red; */
-        padding-left: 0.5rem;
+        padding-left: 1rem;
     }
     .logo h5{
         color: var(--primary-color);
@@ -1277,7 +1281,7 @@ section{
 .card-number{
     gap: 0.9rem;
 }
-.card-number span{
+.card-number #one{
     font-size: 1.9rem;
 }
 .artist,.album,.playlist,.song{
@@ -1295,7 +1299,8 @@ section{
     font-weight: 500;
 }
 #artist-number p{
-    color: #d3d3d389;
+    color: #d3d3d3;
+    opacity: 0.8;
     font-size: 0.9rem;
 }
 .card-pagination{
