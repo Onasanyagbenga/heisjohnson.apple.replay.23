@@ -11,7 +11,9 @@
     background: rgb(81,103,231);
     background: radial-gradient(circle, rgba(81,103,231,1) 11%, rgba(57,195,197,1) 75%);
 }
-
+body{
+    width: 100%;
+}
 /* header */
 
 header{
