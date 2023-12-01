@@ -286,7 +286,7 @@ section{
 #card-header p{
     font-size: 1.7rem;
     color: #d3d3d3;
-    opacity: 0.8;
+    opacity: 1;
     font-weight: 500;
     /* color:lightgrey; */
 }
@@ -311,7 +311,7 @@ section{
 .card-number #one{
     font-size: 4rem;
     color: #d3d3d3;
-    opacity: 0.8;
+    opacity: 1;
     font-weight: 700;
 }
 .artist,.album,.playlist,.song{
@@ -345,7 +345,7 @@ section{
 }
 #artist-number p{
     color: #d3d3d3;
-    opacity: 0.8;
+    opacity: 1;
     font-weight: 500;
     font-size: var(--font-size);
 }
@@ -371,7 +371,7 @@ section{
     background-color: var(--primary-color);
 }
 .card-pagination .share{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #000000b5;
     border-radius: 50%;
     position: absolute;
@@ -426,15 +426,14 @@ section{
 }
 #song-number p, #album-number p, #playlist-number p{
     color: #d3d3d3;
+    font-weight: 500;
     font-size: var(--font-size);
 }
 
 /* genre section */
 .genre-body{
     width: 100%;
-    /* border: 2px solid red; */
     padding: 1rem 3rem;
-    /* backdrop-filter: blur(20px); */
 }
 .genre-content{
     width: 100%; 
@@ -442,21 +441,18 @@ section{
     border-radius: 25px;
     background-color: #00000024;
     padding: 2.5rem;
-    /* background-color: var(--secondary-color); */
 }
 .genre-content h2{
     text-transform: capitalize;
     font-size: 2.2rem;
-    /* color: var(--secondary-color); */
     color: var(--primary-color);
 }
 .genre-info{
     width: 100%;
 }
 .genre-info h3{
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     color: var(--primary-color);
-    /* color: var(--secondary-color); */
     text-transform: capitalize;
 }
 .genre-pagination, .playlist-pagination{
@@ -466,7 +462,7 @@ section{
     width: 100%;
 }
 .genre-pagination .share, .playlist-pagination .share{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #000000b5;
     border-radius: 50%;
     padding: 0.6rem;
@@ -769,7 +765,336 @@ footer{
 
 /* All responsiveness */
 
-@media (max-width:250px){
+
+@media (min-width:150px) and (max-width:250px){
+    nav{
+        padding: 0.5rem;
+    }
+    .hidden-header{
+        /* border-top: 2px solid red; */
+        padding: 4rem 1rem;
+    }
+    .hidden-header.active{
+        bottom: 0;
+    }
+    .hidden-header span h2{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .hidden-header-year{
+        margin-top: 2rem;
+        /* border: 2px solid red; */
+    }
+    #second-year p{
+        color: #d3d3d368;
+        font-size: 7rem;
+        font-weight: 500;
+    }
+    .hidden-header #first-year p{
+        font-size: 7rem;
+        font-weight: 500;
+    }
+    
+    /* responsive header */
+    .ham-container{
+        padding: 0;
+        /* border: 2px solid white; */
+    }
+    #hamburger{
+        width: 20px;
+        height: 10px;
+    }
+    #hamburger.active span:nth-of-type(1){
+        width: 100%;
+        transform: rotate(40deg) translateY(2px) translateX(3px);
+    }
+    #hamburger.active span:nth-of-type(2){
+        width: 100%;
+        transform: rotate(-40deg) translateY(-5px) translateX(4px);
+    }
+
+    /* hamburger styling ends here */
+    
+    .logo{
+        width: 100%;
+        /* border: 2px solid red; */
+        padding-left: 0.5rem;
+    }
+    .logo h5{
+        font-size: 0.7rem;
+    }
+    .logo h2{
+        font-size: 1rem;
+    }
+    .music{
+        display: flex;
+        /* border: 2px solid red; */
+        gap: 0.1rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .music i{
+        font-size: 1rem;
+    }
+    .music p{
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    /* hero section */
+
+.hero{
+    padding: 1rem;
+}
+.hero-content{
+    height: 40vh;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    justify-content: center;
+    gap: 2rem;
+}
+#hero-head h2{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+#hero-button button{
+    width: 100%;
+    max-width: 135px;
+    padding: 0.5rem 0;
+    gap: 0.3rem;
+}
+#hero-button button i{
+    font-size: 0.5rem;
+}
+#hero-button button p{
+    font-size: 0.5rem;
+}
+/* hero ends */
+
+/* artist section */
+section{
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+.section-header{
+    padding: 1rem 0;
+}
+.section-header h2{
+    font-size: 1rem;
+}
+.card{
+    padding: 0 1rem;
+}
+.card-content{
+    padding: 0.8rem;
+    gap: 2rem;
+    border-radius: 10px;
+}
+#card-header{
+    width: 100%;
+    padding-left: 0;
+}
+#card-header h2{
+    font-size: 1rem;
+}
+#card-header p{
+    font-size: 0.6rem;
+}
+.card-info{
+    padding: 0;
+    gap: var(--font-size);    
+}
+.card-number{
+    gap: 0.65rem;
+}
+.card-number #one{
+    font-size: 1.1rem;
+}
+.artist,.album,.playlist,.song{
+    gap: 0.3rem;
+}
+.artist #artist-img{
+    width: 30px;
+    height: 30px;
+}
+#artist-number{
+    padding: 0.1rem;
+}
+#artist-number h5{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+#artist-number p{
+    color: #d3d3d3;
+    opacity: 1;
+    font-size: 0.5rem;
+}
+.card-pagination{
+    padding: 0.2rem 0;
+    gap: 0.3rem;
+}
+.card-pagination #dot{
+    height: 4px;
+    width: 4px;
+}
+.card-pagination .share{
+    font-size: 0.6rem;
+    padding: 0.35rem;
+    top: -10px;
+    right: 5px;
+}
+.playlist-pagination .share{
+    font-size: 0.6rem;
+    padding: 0.35rem;
+}
+#song-number #artist-flex,#album-flex{
+    gap: 0.1rem;
+}
+#artist-flex i,#album-flex i{
+    font-size: 0.35rem;
+    border-radius: 3px;
+    padding: 0.15rem;
+}
+#song-img,#album-img,#playlist-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+}
+#song-number,#album-number,#playlist-number{
+    padding: 0.1rem;
+}
+#song-number h5{
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+#song-number h4,#album-number h5{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+#playlist-number h5{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+#song-number p, #album-number p, #playlist-number p{
+    color: #d3d3d379;
+    font-size: 0.5rem;
+}
+
+/* genre section */
+.genre-body{
+    padding: 1rem;
+}
+.genre-content{
+    border-radius: 15px;
+    padding: 1rem;
+}
+.genre-content h2{
+    font-size: var(--font-size);
+}
+.genre-info h3{
+    font-size: 1.3rem;
+}
+.genre-pagination .share{
+    top: -40px;
+    right: 20px;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+}
+/* replay section */
+.replay{
+    width: 100%;
+    padding: 1rem;
+}
+.replay-content{
+    width: 100%;
+    padding: 0 0.5rem;
+    gap: 2rem;
+}
+.replay-card{
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.replay-music{
+    gap: 0.1rem;
+}
+.replay-music i{
+    font-size: 0.7rem;
+}
+.replay-music p{
+    font-size: 0.9rem;
+}
+.replay-number{
+    padding-top: 2.5rem;
+    padding-left: 0.2rem;
+}
+.replay-number h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.replay-number h1{
+    font-size: 5rem;
+    font-weight: 500;
+}
+.replay-button button{
+    width: 100%;
+    max-width: 150px;
+    padding: 0.5rem 0;
+    gap: 0.3rem;
+}
+.replay-button button:hover{
+    background: transparent;
+    border: 2px solid black;
+}
+.replay-button button:hover p,.replay-button button:hover .arrow{
+    color: var(--secondary-color);
+}
+.replay-button button .arrow{
+    font-size: 0.6rem;
+}
+.replay-button button p{
+    font-size: 0.6rem;
+}
+
+/* summary */
+.summary-info{
+    gap: 0.2rem;
+    padding: 1.1rem 0;
+}
+.summary-info > span{
+    font-size: 0.45rem;
+}
+
+/* footer */
+.footer-content{
+    padding: 2.2rem 1rem;
+}
+.footer-content span > p{
+    font-size: 0.5rem;
+}
+.footer-info{
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+.footer-info span:not(:last-child){
+    padding-right: 0.5rem;
+    border-right: 0.5px solid lightgray;
+}
+.name-tag{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    /* text-align: center; */
+}
+.name-tag i{
+    font-size: 0.8rem;
+}
+.name-tag a{
+    font-size: 0.6rem;
+}
+}
+
+@media (min-width:251px) and (max-width:327px){
     nav{
         padding: 0.5rem;
     }
@@ -817,21 +1142,17 @@ footer{
     }
 
     /* hamburger styling ends here */
-    
+
     .logo{
         width: 100%;
         /* border: 2px solid red; */
         padding-left: 0.5rem;
     }
     .logo h5{
-        color: var(--primary-color);
-        text-transform: capitalize;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     .logo h2{
-        color: var(--primary-color);
-        text-transform: capitalize;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .music{
         display: flex;
@@ -855,7 +1176,7 @@ footer{
     padding: 1rem;
 }
 .hero-content{
-    height: 40vh;
+    height: 45vh;
     /* border: 2px solid red; */
     border-radius: 20px;
     justify-content: center;
@@ -867,15 +1188,15 @@ footer{
 }
 #hero-button button{
     width: 100%;
-    max-width: 150px;
-    padding: 0.5rem 0;
+    max-width: 170px;
+    padding: 0.65rem 0;
     gap: 0.3rem;
 }
 #hero-button button i{
-    font-size: 0.5rem;
+    font-size: 0.55rem;
 }
 #hero-button button p{
-    font-size: 0.6rem;
+    font-size: 0.65rem;
 }
 /* hero ends */
 
@@ -934,7 +1255,7 @@ section{
 }
 #artist-number p{
     color: #d3d3d3;
-    opacity: 0.8;
+    opacity: 1;
     font-size: 0.6rem;
 }
 .card-pagination{
@@ -987,7 +1308,6 @@ section{
     color: #d3d3d379;
     font-size: 0.6rem;
 }
-
 /* genre section */
 .genre-body{
     padding: 1rem;
@@ -1103,7 +1423,7 @@ section{
 }
 }
 
-@media (min-width:251px) and (max-width:390px){
+@media (min-width:328px) and (max-width:390px){
     nav{
         padding: 1.25rem;
     }
@@ -1122,12 +1442,6 @@ section{
         left: 0px;
         padding: 8rem 5rem;
     }
-    /* .hidden-header{
-        margin-top: 5rem;
-        border-top: 2px solid red;
-        padding-left: 3rem;
-        padding-top: 9rem;
-    } */
     .hidden-header.active{
         bottom: 0;
     }
@@ -1141,18 +1455,12 @@ section{
     }
     #second-year p{
         color: #d3d3d368;
-        font-size: 9rem;
+        font-size: 8.5rem;
         font-weight: 600;
     }
     .hidden-header #first-year p{
-        font-size: 9rem;
+        font-size: 9.5rem;
         font-weight: 600;
-    }
-    .hidden-header #first-year p{
-        color: var(--primary-color);
-        font-size: 10rem;
-        font-weight: 500;
-        transition: color 800ms;
     }
     
     /* responsive header */
@@ -1270,7 +1578,7 @@ section{
 #card-header p{
     font-size: 1.1rem;
     color: #d3d3d3;
-    opacity: 0.8;
+    opacity: 1;
     font-weight: 500;
 }
 .card-info{
@@ -1300,7 +1608,7 @@ section{
 }
 #artist-number p{
     color: #d3d3d3;
-    opacity: 0.8;
+    opacity: 1;
     font-size: 0.9rem;
 }
 .card-pagination{
@@ -1368,7 +1676,7 @@ section{
     font-weight: 500;
 }
 .genre-info h3{
-    font-size: 1.4rem;
+    font-size: 2.3rem;
     font-weight: 600;
 }
 .genre-pagination .share{
@@ -1464,5 +1772,1032 @@ section{
 }
 .name-tag a{
     font-size: 0.9rem;
+}
+}
+
+@media (min-width:391px) and (max-width:480px){
+    nav{
+        padding: 1.25rem;
+    }
+    .hidden-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        bottom: 100%;
+        left: 0px;
+        padding: 8rem 5rem;
+    }
+    .hidden-header.active{
+        bottom: 0;
+    }
+    .hidden-header span h2{
+        font-size: 1.75rem;
+        font-weight: 500;
+    }
+    .hidden-header-year{
+        margin-top: 2.3rem;
+        /* border: 2px solid red; */
+    }
+    #second-year p{
+        color: #d3d3d368;
+        font-size: 9rem;
+        font-weight: 600;
+    }
+    .hidden-header #first-year p{
+        font-size: 9.5rem;
+        font-weight: 600;
+    }
+    
+    /* responsive header */
+    .ham-container{
+        padding: 0;
+        /* border: 2px solid white; */
+    }
+    #hamburger{
+        width: 25px;
+        height: 15px;
+    }
+    #hamburger.active span:nth-of-type(1){
+        width: 100%;
+        transform: rotate(40deg) translateY(0px) translateX(3px);
+    }
+    #hamburger.active span:nth-of-type(2){
+        width: 100%;
+        transform: rotate(-40deg) translateY(-2px) translateX(4px);
+    }
+
+    /* hamburger styling ends here */
+    
+    .logo{
+        width: 100%;
+        /* border: 2px solid red; */
+        padding-left: 1rem;
+    }
+    .logo h5{
+        color: var(--primary-color);
+        text-transform: capitalize;
+        font-size: 1.05rem;
+    }
+    .logo h2{
+        color: var(--primary-color);
+        text-transform: capitalize;
+        font-size: 1.45rem;
+    }
+    .music{
+        display: flex;
+        /* border: 2px solid red; */
+        gap: 0.1rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .music i{
+        font-size: 1.1rem;
+        color: var(--primary-color);
+    }
+    .music p{
+        font-size: 1.45rem;
+        color: var(--primary-color);
+        text-transform: capitalize;
+    }
+    /* hero section */
+main{
+    padding-top: 1.5rem;
+}
+.hero{
+    padding: 1.5rem;
+}
+.hero-content{
+    height: 60vh;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#hero-head h2{
+    color: #FAF9F6;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+#hero-button button{
+    width: 100%;
+    max-width: 200px;
+    padding: 0.75rem 0;
+    gap: 0.3rem;
+}
+#hero-button button i{
+    font-size: 0.75rem;
+}
+#hero-button button p{
+    font-size: 0.8rem;
+    font-weight: 450;
+}
+/* hero ends */
+
+/* artist section */
+section{
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+.section-header{
+    padding: 1rem 0;
+}
+.section-header h2{
+    font-size: 1.95rem;
+    font-weight: 600;
+}
+.card{
+    padding: 1rem 1.5rem;
+}
+.card-content{
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    border-radius: 10px;
+}
+#card-header{
+    width: 100%;
+    padding-left: 0;
+}
+#card-header h2{
+    font-size: 1.8rem;
+}
+#card-header p{
+    font-size: 1.3rem;
+    color: #d3d3d3;
+    opacity: 1;
+    font-weight: 500;
+}
+.card-info{
+    padding: 0;
+    gap: 1.5rem;
+    /* gap: var(--font-size);     */
+}
+.card-number{
+    gap: 0.95rem;
+}
+.card-number #one{
+    font-size: 2.1rem;
+}
+.artist,.album,.playlist,.song{
+    gap: 0.7rem;
+}
+.artist #artist-img{
+    width: 50px;
+    height: 50px;
+}
+#artist-number{
+    padding: 0.25rem;
+}
+#artist-number h5{
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+#artist-number p{
+    color: #d3d3d3;
+    opacity: 1;
+    font-size: 0.95rem;
+}
+.card-pagination{
+    padding: 0.2rem 0;
+    gap: 0.5rem;
+}
+.card-pagination #dot{
+    height: 9px;
+    width: 9px;
+}
+.card-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    top: -20px;
+    right: 5px;
+}
+.playlist-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.4rem;
+}
+#song-number #artist-flex,#album-flex{
+    gap: 0.2rem;
+}
+#artist-flex i,#album-flex i{
+    font-size: 0.4rem;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.2rem;
+}
+#song-img,#album-img,#playlist-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+#song-number,#album-number,#playlist-number{
+    padding: 0.3rem;
+}
+#song-number h5{
+    font-weight: 500;
+    font-size: 1.35rem;
+}
+#song-number h4,#album-number h5{
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+#playlist-number h5{
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+#song-number p, #album-number p, #playlist-number p{
+    color: #d3d3d38d;
+    font-size: 0.95rem;
+}
+
+/* genre section */
+.genre-body{
+    padding: 1.5rem;
+}
+.genre-content{
+    border-radius: 15px;
+    padding: 1rem 1rem 3.5rem 1rem;
+}
+.genre-content h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.genre-info h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.genre-pagination .share{
+    top: -50px;
+    right: 20px;
+    font-size: 1.4rem;
+    padding: 0.4rem;
+}
+
+/* replay section */
+.replay{
+    width: 100%;
+    padding: 1rem;
+}
+.replay-content{
+    width: 100%;
+    padding: 0 1.5rem;
+    gap: 2rem;
+}
+.replay-card{
+    padding: 1rem;
+    border-radius: 15px;
+}
+.replay-music{
+    gap: 0.1rem;
+}
+.replay-music i{
+    font-size: 1.25rem;
+}
+.replay-music p{
+    font-size: 1.4rem;
+}
+.replay-number{
+    padding-top: 2.5rem;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.replay-number h2{
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.replay-number h1{
+    font-size: 11rem;
+    font-weight: 500;
+}
+.replay-button button{
+    width: 100%;
+    max-width: 200px;
+    padding: 0.8rem 0;
+    gap: 0.3rem;
+}
+.replay-button button .arrow{
+    font-size: 0.8rem;
+}
+.replay-button button p{
+    font-size: 0.85rem;
+    font-weight: 450;
+}
+
+/* summary */
+.summary-info{
+    gap: 0.2rem;
+    padding: 1.9rem 0;
+}
+.summary-info > span{
+    font-size: 0.85rem;
+}
+
+/* footer */
+.footer-content{
+    padding:2.3rem 2rem;
+}
+.footer-content span > p{
+    font-size: 0.7rem;
+}
+.footer-info{
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+.footer-info span:not(:last-child){
+    padding-right: 0.5rem;
+    border-right: 0.5px solid lightgray;
+}
+.name-tag{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+.name-tag i{
+    font-size: 1.15rem;
+}
+.name-tag a{
+    font-size: 0.95rem;
+}
+}
+
+@media (min-width:481px) and (max-width:767px){
+    nav{
+        padding: 1.25rem;
+    }
+    .hidden-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        bottom: 100%;
+        left: 0px;
+        padding: 8rem 5rem;
+    }
+    .hidden-header.active{
+        bottom: 0;
+    }
+    .hidden-header span h2{
+        font-size: 1.85rem;
+        font-weight: 500;
+    }
+    .hidden-header-year{
+        margin-top: 2.2rem;
+        /* border: 2px solid red; */
+    }
+    #second-year p{
+        color: #d3d3d368;
+        font-size: 9rem;
+        font-weight: 600;
+    }
+    .hidden-header #first-year p{
+        font-size: 10rem;
+        font-weight: 600;
+    }
+    
+    /* responsive header */
+    .ham-container{
+        padding: 0;
+        /* border: 2px solid white; */
+    }
+    #hamburger{
+        width: 30px;
+        height: 15px;
+    }
+    #hamburger.active span:nth-of-type(1){
+        width: 100%;
+        transform: rotate(40deg) translateY(0px) translateX(3px);
+    }
+    #hamburger.active span:nth-of-type(2){
+        width: 100%;
+        transform: rotate(-40deg) translateY(-2px) translateX(4px);
+    }
+
+    /* hamburger styling ends here */
+    
+    .logo{
+        width: 100%;
+        /* border: 2px solid red; */
+        padding-left: 1rem;
+    }
+    .logo h5{
+        font-size: 1.2rem;
+    }
+    .logo h2{
+        font-size: 1.7rem;
+    }
+    .music{
+        display: flex;
+        /* border: 2px solid red; */
+        gap: 0.1rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .music i{
+        font-size: 1.4rem;
+    }
+    .music p{
+        font-size: 1.7rem;
+    }
+    /* hero section */
+main{
+    padding-top: 1.5rem;
+}
+.hero{
+    padding: 1.5rem;
+}
+.hero-content{
+    height: 60vh;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#hero-head h2{
+    color: #FAF9F6;
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+#hero-button button{
+    width: 100%;
+    max-width: 200px;
+    padding: 0.8rem 0;
+    gap: 0.3rem;
+}
+#hero-button button i{
+    font-size: 0.8rem;
+}
+#hero-button button p{
+    font-size: 0.8rem;
+    font-weight: 450;
+}
+/* hero ends */
+
+/* artist section */
+section{
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+.section-header{
+    padding: 1rem 0;
+}
+.section-header h2{
+    font-size: 2.15rem;
+    font-weight: 600;
+}
+.card{
+    padding: 1rem 1.5rem;
+}
+.card-content{
+    padding: 1rem 1.8rem;
+    gap: 2rem;
+    border-radius: 10px;
+}
+#card-header{
+    width: 100%;
+    padding-left: 0;
+}
+#card-header h2{
+    font-size: 1.9rem;
+}
+#card-header p{
+    font-size: 1.4rem;
+    color: #d3d3d3;
+    opacity: 1;
+    font-weight: 500;
+}
+.card-info{
+    padding: 0;
+    gap: 1.5rem;
+    /* gap: var(--font-size);     */
+}
+.card-number{
+    gap: 0.95rem;
+}
+.card-number #one{
+    font-size: 2.3rem;
+}
+.artist,.album,.playlist,.song{
+    gap: 0.75rem;
+}
+.artist #artist-img{
+    width: 55px;
+    height: 55px;
+}
+#artist-number{
+    padding: 0.25rem;
+}
+#artist-number h5{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+#artist-number p{
+    color: #d3d3d3;
+    opacity: 1;
+    font-size: 1rem;
+}
+.card-pagination{
+    padding: 0.2rem 0;
+    gap: 0.5rem;
+}
+.card-pagination #dot{
+    height: 10px;
+    width: 10px;
+}
+.card-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    top: -20px;
+    right: 5px;
+}
+.playlist-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.4rem;
+}
+#song-number #artist-flex,#album-flex{
+    gap: 0.2rem;
+}
+#artist-flex i,#album-flex i{
+    font-size: 0.4rem;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.2rem;
+}
+#song-img,#album-img,#playlist-img{
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+}
+#song-number,#album-number,#playlist-number{
+    padding: 0.3rem;
+}
+#song-number h5{
+    font-weight: 500;
+    font-size: 1.45rem;
+}
+#song-number h4,#album-number h5{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+#playlist-number h5{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+#song-number p, #album-number p, #playlist-number p{
+    color: #d3d3d3b4;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* genre section */
+.genre-body{
+    padding: 1.5rem;
+}
+.genre-content{
+    border-radius: 15px;
+    padding: 1rem 1rem 3.5rem 1rem;
+}
+.genre-content h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.genre-info h3{
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.genre-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.4rem;
+}
+
+/* replay section */
+.replay{
+    width: 100%;
+    padding: 1rem;
+}
+.replay-content{
+    width: 100%;
+    padding: 0 1.5rem;
+    gap: 2rem;
+}
+.replay-card{
+    padding: 1rem;
+    border-radius: 15px;
+}
+.replay-music{
+    gap: 0.1rem;
+}
+.replay-music i{
+    font-size: 1.25rem;
+}
+.replay-music p{
+    font-size: 1.5rem;
+}
+.replay-number{
+    padding-top: 2.5rem;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.replay-number h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.replay-number h1{
+    font-size: 11.5rem;
+    font-weight: 500;
+}
+.replay-button button{
+    width: 100%;
+    max-width: 200px;
+    padding: 0.8rem 0;
+    gap: 0.3rem;
+}
+.replay-button button .arrow{
+    font-size: 0.85rem;
+}
+.replay-button button p{
+    font-size: 0.9rem;
+    font-weight: 450;
+}
+
+/* summary */
+.summary-info{
+    gap: 0.2rem;
+    padding: 1.9rem 0;
+}
+.summary-info > span{
+    font-size: 0.9rem;
+}
+
+/* footer */
+.footer-content{
+    padding:2.3rem 2rem;
+}
+.footer-content span > p{
+    font-size: 0.85rem;
+}
+.footer-info{
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+.footer-info span:not(:last-child){
+    padding-right: 0.5rem;
+    border-right: 0.5px solid lightgray;
+}
+.name-tag{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+.name-tag i{
+    font-size: 1.2rem;
+}
+.name-tag a{
+    font-size: 1rem;
+}
+}
+
+@media (min-width:768px) and (max-width:1000px){
+    nav{
+        padding: 1.25rem;
+    }
+    .hidden-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        bottom: 100%;
+        left: 0px;
+        padding: 8rem 5rem;
+    }
+    .hidden-header.active{
+        bottom: 0;
+    }
+    .hidden-header span h2{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .hidden-header-year{
+        margin-top: 0;
+        /* border: 2px solid red; */
+    }
+    #second-year p{
+        color: #d3d3d368;
+        font-size: 10rem;
+        font-weight: 600;
+    }
+    .hidden-header #first-year p{
+        font-size: 11.5rem;
+        font-weight: 600;
+    }
+    
+    /* responsive header */
+    .ham-container{
+        padding: 0;
+        /* border: 2px solid white; */
+    }
+    #hamburger{
+        width: 35px;
+        height: 18px;
+    }
+    #hamburger.active span:nth-of-type(1){
+        width: 100%;
+        transform: rotate(40deg) translateY(0px) translateX(3px);
+    }
+    #hamburger.active span:nth-of-type(2){
+        width: 100%;
+        transform: rotate(-40deg) translateY(-2px) translateX(4px);
+    }
+
+    /* hamburger styling ends here */
+    
+    .logo{
+        width: 100%;
+        /* border: 2px solid red; */
+        padding-left: 1.5rem;
+    }
+    .logo h5{
+        font-size: 1.2rem;
+    }
+    .logo h2{
+        font-size: 1.85rem;
+    }
+    .music{
+        display: flex;
+        /* border: 2px solid red; */
+        gap: 0.1rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .music i{
+        font-size: 1.5rem;
+    }
+    .music p{
+        font-size: 1.85rem;
+    }
+    /* hero section */
+main{
+    padding-top: 1.5rem;
+}
+.hero{
+    padding: 1.5rem;
+}
+.hero-content{
+    height: 60vh;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#hero-head h2{
+    color: #FAF9F6;
+    font-size: 3rem;
+    font-weight: 500;
+}
+#hero-button button{
+    width: 100%;
+    max-width: 250px;
+    padding: 0.95rem 0;
+    gap: 0.3rem;
+}
+#hero-button button i{
+    font-size: 0.85rem;
+}
+#hero-button button p{
+    font-size: 0.95rem;
+    font-weight: 450;
+}
+/* hero ends */
+
+/* artist section */
+section{
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+.section-header{
+    padding: 1rem 0;
+}
+.section-header h2{
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.card{
+    padding: 1rem 1.5rem;
+}
+.card-content{
+    padding: 1rem 1.8rem;
+    gap: 2rem;
+    border-radius: 10px;
+}
+#card-header{
+    width: 100%;
+    padding-left: 0;
+}
+#card-header h2{
+    font-size: 2.3rem;
+}
+#card-header p{
+    font-size: 1.6rem;
+    color: #d3d3d3;
+    opacity: 1;
+    font-weight: 500;
+}
+.card-info{
+    padding: 0;
+    gap: 1.5rem;
+}
+.card-number{
+    gap: 1rem;
+}
+.card-number #one{
+    font-size: 2.75rem;
+}
+.artist,.album,.playlist,.song{
+    gap: 0.8rem;
+}
+.artist #artist-img{
+    width: 65px;
+    height: 65px;
+}
+#artist-number{
+    padding: 0.35rem;
+}
+#artist-number h5{
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+#artist-number p{
+    color: #d3d3d3;
+    opacity: 1;
+    font-size: 1.1rem;
+}
+.card-pagination{
+    padding: 0.2rem 0;
+    gap: 0.6rem;
+}
+.card-pagination #dot{
+    height: 12px;
+    width: 12px;
+}
+.card-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    top: -20px;
+    right: 5px;
+}
+.playlist-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.6rem;
+}
+#song-number #artist-flex,#album-flex{
+    gap: 0.3rem;
+}
+#artist-flex i,#album-flex i{
+    font-size: 0.4rem;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.3rem;
+}
+#song-img,#album-img,#playlist-img{
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+}
+#song-number,#album-number,#playlist-number{
+    padding: 0.4rem;
+}
+#song-number h5{
+    font-weight: 500;
+    font-size: 1.65rem;
+}
+#song-number h4,#album-number h5{
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+#playlist-number h5{
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+#song-number p, #album-number p, #playlist-number p{
+    color: #d3d3d3b4;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* genre section */
+.genre-body{
+    padding: 1.5rem;
+}
+.genre-content{
+    border-radius: 15px;
+    padding: 1rem 1rem 3.5rem 1rem;
+}
+.genre-content h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.genre-info h3{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.genre-pagination .share{
+    font-size: 1.4rem;
+    padding: 0.6rem;
+}
+
+/* replay section */
+.replay{
+    width: 100%;
+    padding: 1rem;
+}
+.replay-content{
+    width: 100%;
+    padding: 0 1.5rem;
+    gap: 4rem;
+}
+.replay-card{
+    padding: 1rem;
+    border-radius: 15px;
+}
+.replay-music{
+    gap: 0.1rem;
+}
+.replay-music i{
+    font-size: 1.3rem;
+}
+.replay-music p{
+    font-size: 1.75rem;
+}
+.replay-number{
+    padding-top: 2.5rem;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.replay-number h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.replay-number h1{
+    font-size: 11.5rem;
+    font-weight: 500;
+}
+.replay-button button{
+    width: 100%;
+    max-width: 220px;
+    padding: 0.9rem 0;
+    gap: 0.3rem;
+}
+.replay-button button .arrow{
+    font-size: 0.9rem;
+}
+.replay-button button p{
+    font-size: 0.95rem;
+    font-weight: 450;
+}
+
+/* summary */
+.summary-info{
+    gap: 0.2rem;
+    padding: 2rem 0;
+}
+.summary-info > span{
+    font-size: 1rem;
+}
+
+/* footer */
+.footer-content{
+    padding:2.3rem 2rem;
+}
+.footer-content span > p{
+    font-size: 0.95rem;
+}
+.footer-info{
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+.footer-info span:not(:last-child){
+    padding-right: 0.5rem;
+    border-right: 0.5px solid lightgray;
+}
+.name-tag{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+.name-tag i{
+    font-size: 1.3rem;
+}
+.name-tag a{
+    font-size: 1.1rem;
 }
 }
