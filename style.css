@@ -136,10 +136,12 @@ nav{
     text-transform: capitalize;
     font-size: 1.3rem;
 }
-.logo h2{
+.logo a{
     color: var(--primary-color);
     text-transform: capitalize;
     font-size: 2.2rem;
+    font-weight: 600;
+    text-decoration: none;
 }
 .music{
     width: 100%;
@@ -828,7 +830,7 @@ footer{
     .logo h5{
         font-size: 0.7rem;
     }
-    .logo h2{
+    .logo a{
         font-size: 1rem;
     }
     .music{
@@ -1215,7 +1217,7 @@ section{
     .logo h5{
         font-size: 0.9rem;
     }
-    .logo h2{
+    .logo a{
         font-size: 1.3rem;
     }
     .music{
@@ -1612,7 +1614,7 @@ section{
         text-transform: capitalize;
         font-size: 1rem;
     }
-    .logo h2{
+    .logo a{
         color: var(--primary-color);
         text-transform: capitalize;
         font-size: 1.4rem;
@@ -2019,7 +2021,7 @@ section{
         text-transform: capitalize;
         font-size: 1.05rem;
     }
-    .logo h2{
+    .logo a{
         color: var(--primary-color);
         text-transform: capitalize;
         font-size: 1.45rem;
@@ -2425,7 +2427,7 @@ section{
     .logo h5{
         font-size: 1.2rem;
     }
-    .logo h2{
+    .logo a{
         font-size: 1.7rem;
     }
     .music{
@@ -2825,7 +2827,7 @@ section{
     .logo h5{
         font-size: 1.35rem;
     }
-    .logo h2{
+    .logo a{
         font-size: 1.85rem;
     }
     .music{
