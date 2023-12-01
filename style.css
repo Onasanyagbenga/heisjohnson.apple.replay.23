@@ -214,7 +214,7 @@ main{
 #hero-button button:hover{
     background-color: var(--primary-color);
 }
-#hero-button button:hover i,#hero-button button:hover p{
+#hero-button button:hover i,#hero-button button:hover a{
     color: var(--secondary-color);
 }
 #hero-button button i{
@@ -481,7 +481,7 @@ section{
 }
 .milestone-card{
     /* width: 100%; */
-    width: 450px;
+    width: 400px;
     border-radius: 25px;
     background-color: #00000024 ;
 }
@@ -542,14 +542,14 @@ section{
     justify-content: center;
 }
 .milestone-image-container .milestone-radius{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     overflow: hidden;
     border-radius: 50%;
 }
 .milestone-img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -674,7 +674,7 @@ section{
 .replay-button button:hover{
     background-color: var(--secondary-color);
 }
-.replay-button button:hover p,.replay-button button:hover .arrow{
+.replay-button button:hover a,.replay-button button:hover .arrow{
     color: var(--primary-color);
 }
 .replay-button button .arrow{
