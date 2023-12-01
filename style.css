@@ -369,6 +369,8 @@ section{
     color: #000000b5;
     border-radius: 50%;
     position: absolute;
+    border: none;
+    outline: none;
     padding: 0.6rem;
     cursor: pointer;
     transition: 0.5s;
@@ -465,6 +467,8 @@ section{
     font-size: 1.6rem;
     color: #000000b5;
     transition: 0.5s;
+    border: none;
+    outline: none;
     cursor: pointer;
     border-radius: 50%;
     padding: 0.6rem;
