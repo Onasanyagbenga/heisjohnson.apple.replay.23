@@ -368,9 +368,15 @@ section{
     border-radius: 50%;
     position: absolute;
     padding: 0.6rem;
+    cursor: pointer;
+    transition: 0.5s;
     top: -5px;
     right: 40px;
     background-color: var(--primary-color);
+}
+.card-pagination .share:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 #song-number #artist-flex,#album-flex{
     display: flex;
@@ -456,9 +462,15 @@ section{
 .genre-pagination .share, .playlist-pagination .share{
     font-size: 1.6rem;
     color: #000000b5;
+    transition: 0.5s;
+    cursor: pointer;
     border-radius: 50%;
     padding: 0.6rem;
     background-color: var(--primary-color);
+}
+.genre-pagination .share:hover,.playlist-pagination .share:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 /* milestone section */
@@ -574,8 +586,14 @@ section{
     font-size: 1.3rem;
     color: #000000b5;
     border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
     padding: 0.5rem;
     background-color: var(--primary-color);
+}
+.milestone-footer .share:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 .milestone-pagination{
     width: 100%;
@@ -702,6 +720,7 @@ summary{
 .summary-info > span{
     color: deepskyblue;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 
 /* footer */
